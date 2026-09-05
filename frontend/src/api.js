@@ -1,7 +1,7 @@
 // API client for the ADR-9000 documentation generator backend.
 // Adjust VITE_API_BASE_URL in your .env if the backend isn't on localhost:8000.
 
-const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+const API_BASE = import.meta.env.VITE_API_BASE_URL ;
 
 async function handleResponse(res) {
   if (!res.ok) {
@@ -44,3 +44,4 @@ export async function getRunArtifacts(runId) {
   const res = await fetch(`${API_BASE}/api/runs/${runId}/artifacts`);
   return handleResponse(res);
 }
+
