@@ -1,0 +1,10 @@
+.env
+backend/.venv/
+backend/database.db
+backend/core/.api_cache/
+__pycache__/
+*.pyc
+frontend/node_modules/
+frontend/dist/
+backend/core/fixtures/comms_classification_cache.json
+Documentation/
